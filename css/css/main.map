@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../sass/main.scss",
+		"../sass/_variables.scss",
+		"../sass/_body.scss",
+		"../sass/_grid.scss",
+		"../sass/_nav.scss"
+	],
+	"sourcesContent": [
+		"@import 'variables';\r\n\r\n@import 'body';\r\n@import 'grid';\r\n\r\n@import 'nav';",
+		"//Fonts\r\n@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');\r\n\r\n$fontOne: 'IBM Plex Mono', monospace;\r\n$title: 'Playfair Display SC', serif;\r\n$paragraph: Helvetica, Arial;;\r\n\r\n// Colors\r\n$bg-light: #faf6ed;\r\n$bg: #FB5;\r\n\r\n$red: #E54;\r\n$gray: #222;\r\n\r\n$yellowish:#faf6ed;\r\n",
+		"* {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nimg {\r\n    display: block;\r\n    max-width: 100%;\r\n}\r\n\r\nul {\r\n    list-style: none;\r\n}\r\n\r\nbody {\r\n    background: $bg-light;\r\n    color: $gray;\r\n    -webkit-font-smoothing: antialiased;\r\n}\r\n\r\n.title {\r\n    font-family: $title;\r\n    font-size: 6rem;\r\n    line-height: 1;\r\n    font-weight: 400;\r\n    margin-bottom: 1rem;\r\n}\r\n\r\n.animals p {\r\n    font-family: $paragraph;\r\n}",
+		"body {\r\n    display: grid;\r\n    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;\r\n}\r\n\r\n.menu {\r\n    grid-column:  3 / 5;\r\n    margin-top: 2rem;\r\n    margin-bottom: 2rem;\r\n}\r\n\r\n.grid-section {\r\n    grid-column: 2 / 4;\r\n    width: 100%;\r\n    box-sizing: border-box;\r\n    padding: 10px;\r\n    display: grid;\r\n    grid-template-columns: 90px 300px 1fr;\r\n    grid-gap: 20px;\r\n    margin-bottom: 4rem;\r\n}\r\n\r\n.title {\r\n    grid-column: 1 / 4;\r\n}",
+		".menu {\r\n    background: $bg;\r\n}\r\n\r\n.menu ul {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    padding: 10px;\r\n}\r\n\r\n.menu ul li a {\r\n    display: block;\r\n    padding: 10px;\r\n    margin-right: 10px;\r\n    color: $gray;\r\n    text-decoration: none;\r\n    font-family: $fontOne;\r\n    font-weight: bold;\r\n    text-transform: uppercase;\r\n    font-size: 0.875rem;\r\n    letter-spacing: .1rem;\r\n}"
+	],
+	"names": [],
+	"mappings": "ACCA,OAAO,CAAC,2FAAI;AACZ,OAAO,CAAC,gFAAI;;ACFZ,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC,GACb;;;AAED,AAAA,GAAG,CAAC;EACA,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI,GAClB;;;AAED,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,IAAI,GACnB;;;AAED,AAAA,IAAI,CAAC;EACD,UAAU,EDNH,OAAO;ECOd,KAAK,EDHF,IAAI;ECIP,sBAAsB,EAAE,WAAW,GACtC;;;AAED,AAAA,MAAM,CAAC;EACH,WAAW,EDhBP,qBAAqB,EAAE,KAAK;ECiBhC,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,CAAC;EACd,WAAW,EAAE,GAAG;EAChB,aAAa,EAAE,IAAI,GACtB;;;AAED,AAAA,QAAQ,CAAC,CAAC,CAAC;EACP,WAAW,EDvBH,SAAS,EAAE,KAAK,GCwB3B;;;AC9BD,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,GAAG,CAAC,KAAK,CAAC,oBAAoB,CAAC,GAAG,GAC5D;;;AAED,AAAA,KAAK,CAAC;EACF,WAAW,EAAG,KAAK;EACnB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI,GACtB;;;AAED,AAAA,aAAa,CAAC;EACV,WAAW,EAAE,KAAK;EAClB,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,QAAQ,EAAE,IAAI;EACd,aAAa,EAAE,IAAI,GACtB;;;AAED,AAAA,MAAM,CAAC;EACH,WAAW,EAAE,KAAK,GACrB;;;ACxBD,AAAA,KAAK,CAAC;EACF,UAAU,EHST,IAAI,GGRR;;;AAED,AAAA,KAAK,CAAC,EAAE,CAAC;EACL,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,IAAI,GAChB;;;AAED,AAAA,KAAK,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC;EACV,OAAO,EAAE,KAAK;EACd,OAAO,EAAE,IAAI;EACb,YAAY,EAAE,IAAI;EAClB,KAAK,EHDF,IAAI;EGEP,eAAe,EAAE,IAAI;EACrB,WAAW,EHZL,eAAe,EAAE,SAAS;EGahC,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,SAAS;EACzB,SAAS,EAAE,QAAQ;EACnB,cAAc,EAAE,KAAK,GACxB"
+}
