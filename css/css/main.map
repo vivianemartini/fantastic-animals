@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../sass/main.scss",
+		"../sass/_variables.scss"
+	],
+	"sourcesContent": [
+		"@import 'variables';",
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
