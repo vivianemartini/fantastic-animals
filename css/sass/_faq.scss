@@ -1,0 +1,22 @@
+.faq-list dt {
+    font-family: $fontOne;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    color: $red
+}
+
+.faq-list dt::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background: $bg;
+}
+
+.faq-list dd {
+    font-family: $paragraph;
+    margin-bottom: .5rem;
+    margin-left: 30px;
+}

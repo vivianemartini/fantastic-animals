@@ -1,0 +1,21 @@
+
+.data li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-family: $paragraph;
+}
+
+
+.data li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background: $bg;
+}
+
+.data li a {
+    text-decoration: none;
+}
+
