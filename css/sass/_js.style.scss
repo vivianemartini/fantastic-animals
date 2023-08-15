@@ -1,0 +1,52 @@
+.js .js-tabcontent section {
+    display: none;
+}
+
+.js-tabcontent section.active {
+    display: block !important;
+    animation: show .5s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0 ,0 ,0);
+    }
+}
+
+.js .js-accordion dd {
+    display: none;
+}
+
+.js-accordion dt::after {
+    content: '⤵';
+    margin-left: 10px;
+}
+
+.js-accordion dt.active::after {
+    content: '⤴';
+}
+
+.js-accordion dd.active {
+    display: block;
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 100px;
+    }
+}
+
+.js js-menu {
+    
+}
