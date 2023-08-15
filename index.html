@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>document.documentElement.className += ' js'</script>
     <link rel="stylesheet" href="./css/css/main.css" />
     <title>Animais Fantásticos</title>
   </head>
   <body>
-    <nav class="menu">
+    <nav class="menu js-menu">
       <ul>
         <li><a href="#animals">Animais</a></li>
         <li><a href="#faq">Faq</a></li>
@@ -20,7 +21,7 @@
 
     <section class="grid-section animals" id="animals">
       <h1 class="title">Animais Fantásticos</h1>
-      <ul class="animals-list">
+      <ul class="animals-list js-tabmenu">
         <li><img src="./assets/image1.jpg" alt="Image of a fox" /></li>
         <li><img src="./assets/image2.jpg" alt="Image of a squirrel" /></li>
         <li><img src="./assets/image3.jpg" alt="Image of a bear" /></li>
@@ -29,7 +30,7 @@
         <li><img src="./assets/image6.jpg" alt="Image of a lion" /></li>
       </ul>
 
-      <div class="animals-description">
+      <div class="animals-description js-tabcontent">
         <section>
           <h2>Raposa</h2>
           <p>
@@ -161,7 +162,7 @@
 
     <section class="grid-section faq" id="faq">
       <h1 class="title">FAQ</h1>
-      <dl class="faq-list">
+      <dl class="faq-list js-accordion">
         <dt>Qual a idade dos animais?</dt>
         <dd>
           As raposas são animais mamíferos e onívoros pertencentes à família
@@ -197,12 +198,10 @@
           <a href="https://github.com/vivianemartini" target="_blank">GitHub</a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/viviane-martini/" target="_blank"
-            >LinkedIn</a>
+          <a href="https://www.linkedin.com/in/viviane-martini/" target="_blank">LinkedIn</a>
         </li>
         <li>
-          <a href="https://twitter.com/coffeeeandcode" target="_blank"
-            >Twitter</a>
+          <a href="https://twitter.com/coffeeeandcode" target="_blank">Twitter</a>
         </li>
       </ul>
     </section>

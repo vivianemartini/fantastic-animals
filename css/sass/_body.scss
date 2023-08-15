@@ -51,6 +51,10 @@ body {
     overflow-y: scroll;
 }
 
+.animals-list li {
+    cursor: pointer;
+}
+
 .animals-list::-webkit-scrollbar {
     width: 18px;
 }
